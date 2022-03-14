@@ -28,8 +28,9 @@ public class Filter extends javax.swing.JFrame {
 
         setLocationRelativeTo(null);
         setResizable(false);
+        setTitle("Filter");
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); 
         jLabel1.setText("Filters");
 
         jLabel2.setText("From:");

@@ -1,5 +1,8 @@
 import java.util.List;
 import java.util.ArrayList;
+import gifAnimation.*;
+
+GifMaker gifExport;
 
 PImage img;
 PImage icon_deselected;
@@ -48,6 +51,8 @@ void setup() {
   bReturn = loadImage("data/return.png");
   data = loadTable("data/SITYCLETA-2021.csv","header");
   deselect();
+  gifExport = new GifMaker(this, "export.gif");
+  gifExport.setRepeat(0);
 }
 
 void draw() {
@@ -128,6 +133,7 @@ void draw() {
   if(press){
    moveMap(); 
   }
+  gifExport.addFrame();
 }
 
 void deselect(){
@@ -269,5 +275,8 @@ void keyPressed(){
         }
       }
       break;  
+    case 'y':
+      gifExport.finish();
+      break;
  }
 }
