@@ -140,12 +140,23 @@ void applyFilter(){
   station.clear();
   for(int i = 0; i < selected.size();i++){
       Bicycle a = selected.get(i);
-      if(a.startDay < (filtro.dayFrom == -1 ? -1 : filtro.dayFrom)){ continue;}
-      if(a.startMonth < (filtro.monthFrom == -1 ? -1 : filtro.monthFrom)){ continue;}
-      if(a.startYear < (filtro.yearFrom == -1 ? -1 : filtro.yearFrom)){  continue;}
-      if(a.endDay > (filtro.dayTo == 32 ? 32 : filtro.dayTo)){  continue;}
-      if(a.endMonth > (filtro.monthTo == 13 ? 13 : filtro.monthTo)){  continue;}
-      if(a.endYear > (filtro.yearTo == 3000 ? 3000 : filtro.yearTo)){  continue;}
+      if(a.type == 0){
+        if(a.startDay < (filtro.dayFrom == -1 ? -1 : filtro.dayFrom)){ continue;}
+        if(a.startMonth < (filtro.monthFrom == -1 ? -1 : filtro.monthFrom)){ continue;}
+        if(a.startYear < (filtro.yearFrom == -1 ? -1 : filtro.yearFrom)){  continue;}
+        if(a.startDay > (filtro.dayTo == 32 ? 32 : filtro.dayTo)){ continue;}
+        if(a.startMonth > (filtro.monthTo == 13 ? 13 : filtro.monthTo)){ continue;}
+        if(a.startYear > (filtro.yearTo == 3000 ? 3000 : filtro.yearTo)){  continue;}
+      }
+      if(a.type == 1){
+        if(a.endDay < (filtro.dayFrom == -1 ? -1 : filtro.dayFrom)){  continue;}
+        if(a.endMonth < (filtro.monthFrom == -1 ? -1 : filtro.monthFrom)){  continue;}
+        if(a.endYear < (filtro.yearFrom == -1 ? -1 : filtro.yearFrom)){  continue;}
+        if(a.endDay > (filtro.dayTo == 32 ? 32 : filtro.dayTo)){  continue;}
+        if(a.endMonth > (filtro.monthTo == 13 ? 13 : filtro.monthTo)){  continue;}
+        if(a.endYear > (filtro.yearTo == 3000 ? 3000 : filtro.yearTo)){  continue;}
+      }
+      
       if(filtro.rented){
         if(a.type == 0){
           station.add(a);
