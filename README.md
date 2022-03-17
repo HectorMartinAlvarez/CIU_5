@@ -18,16 +18,17 @@ El proyecto ha sido desarrollado empleando 5 ficheros:
 ## Características
 
   - Información y controles ubicados en su propia ventana, visible al clicar sobre el icono <img src="https://github.com/HectorMartinAlvarez/CIU_5/blob/main/CIU_5/data/help.jpg" alt="Help_Icon" width="50"/> 
-  - Interacción directa con el map.
   - Filtrado de datos, por fecha, por acción(Alquier o Retorno).
-
+  - Interacción directa con el mapa.
+  - Visualización del origen y destino de la bicicleta que sea seleccionada en la lista.
+  
 ## Controles
 
 |Tecla|Descripción|
 |:---:|:----------:|
 |W|Desplazar lista de bicicletas hacia abajo|
 |S|Desplazar lista de bicicletas hacia arriba|
-|R|Restablecer posición y zoom del mapa|
+|R|Restablecer configuración por defecto|
 |Rueda del Ratón|Zoom sobre el mapa|
 |Click Izquierdo|Seleccionar|
 |Mantener Click Izquierdo y Arrastrar el Ratón|Mover el mapa|
