@@ -1,7 +1,8 @@
-public class Filter extends javax.swing.JFrame {
+public class Filter extends javax.swing.JDialog {
 
-    public Filter() {
+    public Filter(boolean modal) {
         initComponents();
+        setModal(modal);
     }
                        
     private void initComponents() {

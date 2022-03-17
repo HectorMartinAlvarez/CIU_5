@@ -1,8 +1,9 @@
-public class Help extends javax.swing.JFrame {
+public class Help extends javax.swing.JDialog {
 
 
-    public Help() {
+    public Help(boolean modal) {
         initComponents();
+        setModal(modal);
         setVisible(true);
     }
                         
