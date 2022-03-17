@@ -172,6 +172,11 @@ public class Filter extends javax.swing.JDialog {
         dayTo = (!jTextField4.getText().equals("") ? Integer.parseInt(jTextField4.getText()) : 32);
         monthTo = (!jTextField5.getText().equals("") ? Integer.parseInt(jTextField5.getText()) : 13);
         yearTo = (!jTextField6.getText().equals("") ? Integer.parseInt(jTextField6.getText()) : 3000);
+        if(!jCheckBox1.isSelected()){
+          if(!jCheckBox2.isSelected()){
+            jCheckBox1.setSelected(true);
+          }
+        }
         rented = jCheckBox1.isSelected();
         returned = jCheckBox2.isSelected();
         applyFilter();

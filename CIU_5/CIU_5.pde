@@ -210,6 +210,13 @@ void deselect(){
 
 void applyFilter(){
   station.clear();
+  for(int i = 0; i < col.length; i++){
+    col[i] = color(255);
+  }
+  rent[0] = 0;
+  rent[1] = 0;
+  ret[0] = 0;
+  ret[1] = 0;
   for(int i = 0; i < selected.size();i++){
       Bicycle a = selected.get(i);
       if(a.startDay < (filtro.dayFrom == -1 ? -1 : filtro.dayFrom)){ continue;}
