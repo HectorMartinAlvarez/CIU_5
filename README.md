@@ -37,7 +37,8 @@ El proyecto ha sido desarrollado empleando 5 ficheros:
 ## Herramientas
   - Processing 3.5.4
 ## Referencia
-  - Material de la asignatura Creando Interfaces de Usuario
-  - Documentación de Processing https://processing.org/reference
+  - [Material de la asignatura Creando Interfaces de Usuario](https://github.com/otsedom/otsedom.github.io)
+  - [Documentación de Processing](https://processing.org/reference) 
+  - [Datos empleados](https://www.sagulpa.com/datos-abiertos)
 
 ![No Gif Here :(](https://github.com/HectorMartinAlvarez/CIU_5/blob/main/animation.gif)
