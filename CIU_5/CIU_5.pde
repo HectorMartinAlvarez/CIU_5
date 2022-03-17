@@ -2,9 +2,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
-import gifAnimation.*;
-
-GifMaker gifExport;
 
 PImage img;
 PImage icon_deselected;
@@ -92,7 +89,7 @@ float[] rent = {0,0};
 float[] ret = {0,0};
 
 void setup() {
-  size(1050,800);
+  size(1100,800);
   img = loadImage("data/map.png");
   icon_deselected = loadImage("data/icon.jpg");
   icon_selected = loadImage("data/icon_selected.jpg");
@@ -105,8 +102,6 @@ void setup() {
   for(int i = 0; i< col.length; i++){
     col[i] = color(255);
   }
-  gifExport = new GifMaker(this, "export.gif");
-  gifExport.setRepeat(0);
 }
 
 void draw() { //<>//
@@ -205,7 +200,6 @@ void draw() { //<>//
   if(press){
    moveMap(); 
   }
-  //gifExport.addFrame();
 }
 
 void deselect(){
@@ -503,9 +497,6 @@ void keyPressed(){
       rent[1] = 0;
       ret[0] = 0;
       ret[1] = 0;
-      break;  
-    case 'y':
-      gifExport.finish();
       break;
  }
 }
