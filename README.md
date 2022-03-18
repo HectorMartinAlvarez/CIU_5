@@ -18,7 +18,7 @@ El proyecto ha sido desarrollado empleando 5 ficheros:
 ## Características
 
   - Información y controles ubicados en su propia ventana, visible al clicar sobre el icono <img src="https://github.com/HectorMartinAlvarez/CIU_5/blob/main/CIU_5/data/help.jpg" alt="Help_Icon" width="50"/> 
-  - Filtrado de datos, por fecha, por acción(Alquier o Retorno).
+  - Filtrado de datos por fecha y por acción(Alquier o Retorno).
   - Interacción directa con el mapa.
   - Visualización del origen y destino de la bicicleta que sea seleccionada en la lista.
   
